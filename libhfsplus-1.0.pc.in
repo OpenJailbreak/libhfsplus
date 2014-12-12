@@ -1,0 +1,11 @@
+prefix=/opt/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libhfsplus-1.0
+Description: Small C library to parse HFS volumes
+Requires: libcrippy-1.0 >= 1.0 libmacho-1.0 >= 1.0
+Version: 1.0
+Libs: -L${libdir}
+Cflags: -I${includedir}

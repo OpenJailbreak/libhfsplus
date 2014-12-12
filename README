@@ -1,0 +1,3 @@
+libdyldcache-1.0
+===================
+Library and tools for parsing and extract files and symbols from Apple's dyldcache files
