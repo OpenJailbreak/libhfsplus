@@ -3,15 +3,14 @@
 #include <stdint.h>
 #include <string.h>
 #include <unistd.h>
-#include <hfs/hfsplus.h>
 #include <dirent.h>
-
-#include <hfs/hfslib.h>
-#include "abstractfile.h"
 #include <inttypes.h>
 
-char endianness;
+#include <libhfsplus-1.0/hfslib.h>
+#include <libhfsplus-1.0/hfsplus.h>
+#include <libhfsplus-1.0/abstractfile.h>
 
+char endianness;
 
 void cmd_ls(Volume* volume, int argc, const char *argv[]) {
 	if(argc > 1)

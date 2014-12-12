@@ -5,7 +5,6 @@
 #include <stdint.h>
 #include <stdlib.h>
 
-
 #include "common.h"
 
 #define READ(a, b, c, d) ((*((a)->read))(a, b, c, d))

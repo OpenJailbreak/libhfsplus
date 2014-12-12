@@ -1,7 +1,8 @@
 #include <zlib.h>
-#include "common.h"
-#include <hfs/hfsplus.h>
-#include <hfs/hfscompress.h>
+
+#include <libhfsplus-1.0/common.h>
+#include <libhfsplus-1.0/hfsplus.h>
+#include <libhfsplus-1.0/hfscompress.h>
 
 void flipHFSPlusDecmpfs(HFSPlusDecmpfs* compressData) {
 	FLIPENDIANLE(compressData->magic);

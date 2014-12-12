@@ -4,8 +4,8 @@
 #include <stdarg.h>
 #include <stdint.h>
 
-#include "abstractfile.h"
-#include "common.h"
+#include <libhfsplus-1.0/abstractfile.h>
+#include <libhfsplus-1.0/common.h>
 
 size_t freadWrapper(AbstractFile* file, void* data, size_t len) {
   return fread(data, 1, len, (FILE*) (file->data));

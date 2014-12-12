@@ -3,12 +3,13 @@
 #include <dirent.h>
 #include <time.h>
 #include <sys/types.h>
-#include "common.h"
-#include <hfs/hfsplus.h>
-#include <hfs/hfscompress.h>
-#include "abstractfile.h"
 #include <sys/stat.h>
 #include <inttypes.h>
+
+#include <libhfsplus-1.0/common.h>
+#include <libhfsplus-1.0/hfsplus.h>
+#include <libhfsplus-1.0/hfscompress.h>
+#include <libhfsplus-1.0/abstractfile.h>
 
 #define BUFSIZE 1024*1024
 

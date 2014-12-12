@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <string.h>
-#include <hfs/hfsplus.h>
+
+#include <libhfsplus-1.0/hfsplus.h>
 
 static inline void flipExtentDescriptor(HFSPlusExtentDescriptor* extentDescriptor) {
   FLIPENDIAN(extentDescriptor->startBlock);
